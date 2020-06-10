@@ -2,10 +2,20 @@
 Input: a List of integers
 Returns: a List of integers
 '''
-def product_of_all_other_numbers(arr):
-    # Your code here
 
-    pass
+# first pass
+# time:  O(n^2)
+# space: O(n)
+def product_of_all_other_numbers(arr):
+    output = []
+    for i in range(len(arr)):
+        factors = arr.copy()
+        factors.pop(i)
+        product = 1
+        for f in factors:
+            product *= f
+        output.append(product)
+    return output
 
 
 if __name__ == '__main__':
