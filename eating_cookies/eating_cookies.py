@@ -7,6 +7,7 @@ Returns: an integer
 '''
 cookie_cache = dict()
 
+
 def eating_cookies(n):
     if n < 0:
         return 0
@@ -23,6 +24,7 @@ def eating_cookies(n):
             output += x_result
 
         return output
+
 
 if __name__ == "__main__":
     # Use the main function here to test out your implementation
