@@ -3,7 +3,7 @@ Input: a List of integers
 Returns: a List of integers
 '''
 
-# first pass
+# first pass -- I think this is as good as it gets?
 def moving_zeroes(arr):
     zeroes = 0
     i = 0
