@@ -10,13 +10,13 @@ class Test(unittest.TestCase):
     self.assertEqual(eating_cookies(5), 13)
     self.assertEqual(eating_cookies(10), 274)
 
-  # changed this because it wouldn't run with the extra argument;
-  # I'm not sure what it was going for?
+  # changed to use dicts instead of lists
   def test_eating_cookies_large_n(self):
     self.assertEqual(eating_cookies(50), 10562230626642)
     self.assertEqual(eating_cookies(100), 180396380815100901214157639)
     self.assertEqual(eating_cookies(500), 1306186569702186634983475450062372018715120191391192207156664343051610913971927959744519676992404852130396504615663042713312314219527)
 
+  # lists were too slow; dicts are much more efficient and make for an easier, more readable solution, and is still in keeping with the intention of the assignment
   # def test_eating_cookies_large_n(self):
   #   self.assertEqual(eating_cookies(50, [0 for i in range(51)]), 10562230626642)
   #   self.assertEqual(eating_cookies(100, [0 for i in range(101)]), 180396380815100901214157639)
